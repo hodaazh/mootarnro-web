@@ -1,0 +1,70 @@
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-weight: 400;
+  direction: rtl;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.4em;
+}
+body > .app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 3rem;
+}
+h2 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* -------------- Public Classes -------------- */
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-fill {
+  flex: 1;
+}
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-end {
+  display: flex;
+  justify-content: end;
+}
+align-base {
+  display: flex;
+  align-items: baseline;
+}
+.justify-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 576px) {
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
