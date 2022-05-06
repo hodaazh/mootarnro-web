@@ -1,10 +1,20 @@
-import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
+import Home from "./pages/home/Home";
+import CardDetail from "./pages/cardDetail/CardDetail";
+import "./styles/global.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header"></header>
-    </div>
+    <BrowserRouter>
+      <ToastContainer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="card/:id" element={<CardDetail />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
